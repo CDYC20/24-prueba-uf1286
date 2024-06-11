@@ -1,10 +1,15 @@
 function generarArrayBidimensional() {
   function generarArray() {
-    return [0, 1, 2];
+    return [r, r1, r2];
   }
 
   var array = [];
-  for (var i = 0; i < 10; i++) {
+  f = Math.floor(Math.random()*11)
+  for (var i = 4; i < f; i++) {
+    
+    r = Math.floor(Math.random()*11)
+    r1 = Math.floor(Math.random()*11)
+    r2 = Math.floor(Math.random()*11)
     array.push(generarArray());
   }
   return array;
